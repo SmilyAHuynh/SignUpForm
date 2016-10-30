@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.temple.signupform.FormActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="69dp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/LinearLayoutName">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:text="Name"
+            android:id="@+id/txtName"
+            android:layout_weight="0.63"
+            android:textSize="25dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/Name"
+            android:layout_weight="0.19" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:id="@+id/LinearLayoutEmail"
+        android:layout_below="@+id/LinearLayoutName"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/LinearLayoutName">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:text="Email"
+            android:id="@+id/txtEmail"
+            android:layout_weight="0.38"
+            android:textSize="25dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/Email"
+            android:layout_weight="0.19"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/LinearLayoutPassword">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:text="Password"
+            android:id="@+id/txtPassword"
+            android:layout_weight="0.38"
+            android:textSize="25dp"
+            android:layout_alignTop="@+id/LinearLayoutPassword"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/Password"
+            android:layout_weight="0.19"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayoutConfirmPw"
+        android:layout_below="@+id/LinearLayoutPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:id="@+id/txtConfirm"
+            android:layout_weight="0.38"
+            android:textSize="25dp"
+            android:layout_alignTop="@+id/LinearLayoutConfirmPw"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:id="@+id/Confirm"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/btnSave"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
